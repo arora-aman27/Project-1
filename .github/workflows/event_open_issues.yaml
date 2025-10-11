@@ -1,0 +1,15 @@
+name: Open Issues Push Events
+on:
+  issues:
+    types:
+      - opened
+jobs:
+  show-info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Info
+        run: 
+          echo "This workflow will get trigger when there will be any open issues in Repo
+      
+      
+      
