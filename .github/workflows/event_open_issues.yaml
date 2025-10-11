@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Info
         run: 
-          echo "This workflow will get trigger whenever there will be any open issues in Repo
+          echo "This workflow will get trigger whenever there will be any open issues in Repo"
       
       
       
