@@ -6,6 +6,9 @@ on:
 jobs:
   push-to-ghcr:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
     steps:
       - name: 'Checkout GitHub Actions'
         uses: actions/checkout@v2
