@@ -19,6 +19,6 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: data-artifact
-          path: data/data.txt
+          path: data/
       - name: Read Data in Job 2
         run: cat data/data.txt
