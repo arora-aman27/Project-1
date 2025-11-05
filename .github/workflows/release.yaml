@@ -25,7 +25,7 @@ jobs:
       - name: creating release for the workflow
         uses: actions/create-release@v1
         env:
-          GITHUB_TOKEN: $ {{ secret.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secret.GITHUB_TOKEN }}
         with:
           tag_name: v${{ github.run_number }}
           release_name: Release v${{ github.run_number }}
