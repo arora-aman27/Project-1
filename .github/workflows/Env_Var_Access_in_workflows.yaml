@@ -1,0 +1,10 @@
+name: Environment Variable in Wokflow
+on: push
+jobs:
+  show-info:
+    runs-on: ubuntu-latest
+    env:
+      APP_MODE: ${{ vars.APP_MODE }}
+    steps:
+      - name:  Display Environment Variables in job
+        run: echo "This is $APP_MODE mode"
